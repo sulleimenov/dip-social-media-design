@@ -1,0 +1,70 @@
+.why
+	&__lists
+		margin-top: 70px
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		height: 280px
+		@include media-breakpoint-down(lg)
+			flex-direction: column
+			height: auto
+			gap: 30px
+	&__lists-item
+		position: absolute
+		padding: 18px 42px
+		background-color: #2A1257
+		border-radius: 60px
+		min-width: 350px
+		text-align: center
+		@include media-breakpoint-down(lg)
+			position: initial
+		&.one
+			top: 0
+			left: 225px
+			@include media-breakpoint-down(xxl)
+				left: 130px
+			@include media-breakpoint-down(xl)
+				left: 30px
+		&.two
+			top: 0
+			right: 225px
+			@include media-breakpoint-down(xxl)
+				right: 130px
+			@include media-breakpoint-down(xl)
+				right: 30px
+		&.three
+			bottom: 0
+			left: 150px
+			@include media-breakpoint-down(xl)
+				left: 30px
+		&.four
+			bottom: 0
+			right: 150px
+			@include media-breakpoint-down(xl)
+				right: 30px
+	&__lists-title
+		margin-bottom: 10px
+		text-transform: uppercase
+		font-size: 18px
+		font-weight: 700
+	&__lists-image
+		width: 222px
+		height: 222px
+		background-color: $red
+		background-image: url(../images/icons/instagram-w.svg)
+		background-position: center
+		background-repeat: no-repeat
+		border-radius: 50%
+		@include media-breakpoint-down(lg)
+			display: none
+	&__question
+		margin-top: 70px
+		text-align: center
+		font-size: 21px
+		font-family: 'Pacifico', sans-serif
+
+.subtitle
+	text-align: center
+	font-size: 17px
+	margin-top: 40px

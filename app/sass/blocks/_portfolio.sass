@@ -1,0 +1,40 @@
+.portfolio
+	&__nav
+		display: flex
+		justify-content: center
+		gap: 30px
+		margin-top: 80px
+		margin-bottom: 70px
+		@include media-breakpoint-down(md)
+			gap: 20px
+			flex-wrap: wrap
+	&__nav-button
+		padding: 8px 30px
+		background-color: $bg
+		border-radius: 20px
+		color: $textcolor
+		cursor: pointer
+		&.mixitup-control-active
+			background-color: $yellow
+	&__lists
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		gap: 30px
+		@include media-breakpoint-down(lg)
+			grid-template-columns: repeat(2, 1fr)
+	&__lists-item
+		display: flex
+		align-items: center
+		justify-content: center
+		background-color: $bg
+		height: 220px
+		border-radius: 6px
+		overflow: hidden
+		img
+			object-fit: cover
+		// @include media-breakpoint-down(xl)
+		// 	height: 225px
+		// @include media-breakpoint-down(lg)
+		// 	height: 275px
+		// @include media-breakpoint-down(md)
+		// 	height: 225px

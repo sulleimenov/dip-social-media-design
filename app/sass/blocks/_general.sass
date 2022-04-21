@@ -1,0 +1,38 @@
+@mixin grad()
+	background: linear-gradient(90deg, #3821EE 0%, #A317B2 100%)
+
+a
+	color: $textcolor
+	text-decoration: none
+
+img
+	max-width: 100%
+	object-fit: contain
+
+section
+	padding: 140px 0
+	background-color: $bg
+	&.dark
+		background-color: $dark
+		color: #fff
+
+.button
+	padding: 19px 55px
+	color: #fff
+	text-transform: uppercase
+	border-radius: 30px
+	border: none
+	font-size: 13px
+	font-weight: 600
+	+grad
+
+.title
+	font-size: 38px
+	font-weight: 700
+	color: $accent
+	text-transform: uppercase
+	text-align: center
+	@include media-breakpoint-down(md)
+		font-size: 30px
+	&--white
+		color: #fff

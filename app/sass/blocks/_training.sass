@@ -1,0 +1,106 @@
+.training
+	&__process
+		margin-top: 100px
+		display: flex
+		justify-content: center
+		column-gap: 70px
+		@include media-breakpoint-down(xl)
+			column-gap: 30px
+		@include media-breakpoint-down(lg)
+			flex-direction: column-reverse
+	&__process-lists
+		background-image: url(../images/static/process.svg)
+		background-repeat: no-repeat
+		background-position: center
+		width: 700px
+		height: 232px
+		position: relative
+		@include media-breakpoint-down(xl)
+			width: 650px
+		@include media-breakpoint-down(md)
+			width: auto
+			background-image: none
+			display: flex
+			flex-direction: column
+			gap: 30px
+	&__process-item
+		position: absolute
+		@include media-breakpoint-down(md)
+			position: relative
+			text-align: center
+		&.one
+			top: 0
+			left: 60px
+			text-align: right
+			@include media-breakpoint-down(md)
+				left: 0
+				text-align: center
+		&.two
+			top: 0
+			right: 80px
+			@include media-breakpoint-down(md)
+				right: 0
+		&.three
+			bottom: 0
+			left: 30px
+			text-align: right
+			@include media-breakpoint-down(md)
+				left: 0
+				text-align: center
+		&.four
+			bottom: 0
+			right: 90px
+			@include media-breakpoint-down(md)
+				right: 0
+	&__process-title
+		font-size: 34px
+		color: $accent
+		text-transform: uppercase
+		font-weight: 700
+		@include media-breakpoint-down(lg)
+			margin-bottom: 60px
+			text-align: center
+		@include media-breakpoint-down(md)
+			font-size: 26px
+	&__learn
+		margin-top: 100px
+	&__learn-body
+		display: grid
+		grid-template-columns: repeat(12, 1fr)
+		column-gap: 30px
+	&__learn-header
+		font-size: 34px
+		color: $accent
+		text-transform: uppercase
+		font-weight: 700
+		margin-bottom: 55px
+		@include media-breakpoint-down(md)
+			font-size: 26px
+			text-align: center
+	&__learn-title
+		font-size: 18px
+		font-weight: 700
+		margin-bottom: 8px
+	&__learn-lists
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		grid-gap: 30px
+		grid-column: 8 span
+		@include media-breakpoint-down(md)
+			grid-column: 12 span
+		@include media-breakpoint-down(sm)
+			grid-template-columns: repeat(1, 1fr)
+	&__learn-image
+		display: flex
+		justify-content: center
+		grid-column: 4 span
+		@include media-breakpoint-down(md)
+			display: none
+	&__learn-item
+		background: url(../images/icons/cheked.svg) left 6px no-repeat
+		padding-left: 26px
+
+	&__learn-title
+
+	&__learn-descr
+

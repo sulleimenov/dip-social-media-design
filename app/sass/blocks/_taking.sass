@@ -1,0 +1,40 @@
+.taking
+	&__lists
+		grid-column: 6 span
+		display: flex
+		flex-direction: column
+		gap: 50px 
+	&__lists-item
+		display: flex
+		column-gap: 30px
+		@include media-breakpoint-down(lg)
+			justify-content: center
+	&__images
+		display: flex
+		justify-content: center
+		grid-column: 6 span
+		@include media-breakpoint-down(lg)
+			margin-bottom: 70px
+	&__grid
+		display: grid
+		grid-template-columns: repeat(12, 1fr)
+		column-gap: 30px
+		margin-top: 70px
+		margin-bottom: 60px
+		@include media-breakpoint-down(lg)
+			display: flex
+			flex-direction: column
+	&__lists-title
+		margin-bottom: 13px
+		font-weight: 700
+		font-size: 18px
+	&__lists-descr
+		max-width: 356px
+	&__bottom
+		display: flex
+		justify-content: center
+	&__subtitle
+		text-transform: uppercase
+		font-size: 18px
+		margin-bottom: 40px
+		text-align: center

@@ -1,0 +1,166 @@
+.header
+	background: linear-gradient(180deg, rgba(213, 232, 254, 0.53) 0%, #D6E9FF 100%)
+	padding-top: 30px
+	min-height: 800px
+	position: relative
+	overflow: hidden
+	&__top
+		display: flex
+		align-items: center
+		margin-bottom: 170px
+		position: relative
+		z-index: 9
+		@include media-breakpoint-down(lg)
+			flex-direction: column
+			align-items: flex-start
+		@include media-breakpoint-down(md)
+			margin-bottom: 80px
+	&__contacts
+		display: flex
+		column-gap: 35px
+		margin-left: 35px
+		@include media-breakpoint-down(lg)
+			margin-left: 0
+			margin-top: 30px
+			flex-direction: column
+			gap: 15px
+		a
+			margin-left: 5px
+			display: inline-block
+			border-bottom: 1px dashed #000
+	&__offer
+		position: relative
+		z-index: 9
+	&__subtitle
+		margin-bottom: 15px
+		color: $accent
+		font-size: 24px
+		font-weight: 300
+	&__title
+		font-size: 44px
+		font-weight: 900
+		text-transform: uppercase
+		margin-bottom: 25px
+		&>.xl-none
+			display: none
+		@include media-breakpoint-down(xl)
+			font-size: 36px
+			.xl-none
+				display: block
+	&__descr
+		margin-bottom: 35px
+	&__advantages-lists
+		display: flex
+		column-gap: 30px
+		margin-bottom: 45px
+	&__advantages-item
+		background: url(../images/icons/star.svg) left center no-repeat
+		padding-left: 18px
+		font-weight: 700
+		font-size: 16px
+	&__decor
+		position: absolute
+		background-repeat: no-repeat
+		&.bg
+			background-image: url(../images/static/bg-header.svg)
+			background-position: right top
+			z-index: 2
+			top: 0
+			right: 0
+			width: 992px
+			height: 100%
+			@include media-breakpoint-down(lg)
+				right: -370px!important
+			@include media-breakpoint-down(md)
+				right: -550px!important
+			@include media-breakpoint-down(sm)
+				right: -650px!important
+		&.moon
+			background-image: url(../images/static/planet.svg)
+			z-index: 2
+			top: 100px
+			right: 690px
+			width: 97px
+			height: 97px
+			@include media-breakpoint-down(lg)
+				display: none
+		&.planet
+			background-image: url(../images/static/big-planet.svg)
+			background-position: right top
+			z-index: 4
+			width: 286px
+			height: 573px
+			top: 0
+			right: 0
+			@include media-breakpoint-down(md)
+				right: -210px!important
+				top: -110px!important
+		&.small-planet
+			background-image: url(../images/static/small-planet.svg)
+			z-index: 3
+			width: 170px
+			height: 170px
+			top: 70px
+			right: 170px
+			@include media-breakpoint-down(lg)
+				top: 120px
+				right: 40px
+			@include media-breakpoint-down(md)
+				display: none
+		&.inst
+			background-image: url(../images/static/header-instagram.svg)
+			z-index: 4
+			width: 234px
+			height: 234px
+			top: 50%
+			right: 250px
+			transform: translateY(-50%)
+			@include media-breakpoint-down(lg)
+				top: auto!important
+				bottom: 0
+				right: -60px!important
+				background-size: 150px
+			@include media-breakpoint-down(md)
+				display: none
+				r
+		&.frame
+			background-image: url(../images/static/frame.jpg)
+			z-index: 1
+			width: 590px
+			height: 395px
+			top: 53%
+			right: 400px
+			transform: translateY(-50%)
+			border-radius: 6px
+			@include media-breakpoint-down(lg)
+				display: none
+
+@media ( max-width: 1790px )
+	.header__decor.frame
+		right: 300px
+@media ( max-width: 1600px )
+	.header__decor.bg
+		right: -70px
+	.header__decor.frame
+		right: 200px
+	.header__decor.inst
+		right: 200px
+	.header__decor.moon
+		right: 610px
+@media ( max-width: 1400px )
+	.header__decor.bg
+		right: -210px
+	.header__decor.frame
+		right: 60px
+	.header__decor.planet
+		right: -90px
+	.header__decor.small-planet
+		right: 90px
+	.header__decor.inst
+		top: 60%
+		right: 60px
+	.header__decor.moon
+		right: 470px
+@media ( max-width: 1300px )
+	.header__decor.frame
+		right: 10px
