@@ -1,0 +1,45 @@
+.course-s
+	padding-bottom: 0
+.course
+	display: flex
+	justify-content: center
+	grid-gap: 30px
+	padding-top: 70px
+	@include media-breakpoint-down(md)
+		flex-direction: column
+		align-items: center
+		gap: 30px
+	&__item
+		width: 350px
+		background-color: #fff
+		border-radius: 10px
+		overflow: hidden
+	&__title
+		text-align: center
+		font-weight: 700
+		font-size: 26px
+		text-transform: uppercase
+		background: linear-gradient(145.72deg, #CB1AAE 6.24%, #300283 77.86%)
+		padding: 20px
+		color: #fff
+	&__list
+		padding: 30px
+		font-size: 18px
+		list-style-type: none
+	&__list-item
+		position: relative
+		padding-left: 22px
+		margin-bottom: 10px
+		&::before
+			content: ''
+			position: absolute
+			width: 10px
+			height: 10px
+			background-color: $accent
+			border-radius: 10px
+			left: 0
+			top: 8px
+	&__button
+		margin: 0 30px
+		margin-bottom: 30px
+		text-align: center
